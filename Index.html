@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathew Gregerson, Esq. | Attorney at Law — Washington, D.C.</title>
+  <style>
+    :root {
+      --navy: #0f2537;
+      --navy-light: #1d3f5c;
+      --gold: #a67c2e;
+      --gold-light: #e5c37d;
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --text: #1c242b;
+      --muted: #52606d;
+      --line: #d9e2ec;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .topbar {
+      background-color: #091824;
+      color: #cbd2d9;
+      font-size: 0.8rem;
+      padding: 0.55rem 1.25rem;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+    .topbar span { color: var(--gold-light); font-weight: 600; }
+    header {
+      background: linear-gradient(150deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: #ffffff;
+      padding: 3.25rem 1.25rem 3rem;
+      text-align: center;
+      border-bottom: 4px solid var(--gold);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 0.65rem;
+    }
+    header h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.15rem;
+      font-weight: 700;
+      margin-bottom: 0.45rem;
+    }
+    .subtitle {
+      font-size: 1.02rem;
+      color: #e4e7eb;
+      max-width: 620px;
+      margin: 0 auto 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: var(--gold);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.8rem 1.65rem;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .btn-outline {
+      display: inline-block;
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      text-decoration: none;
+      padding: 0.78rem 1.45rem;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      margin-left: 0.5rem;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2.25rem 1.25rem;
+    }
+    section { margin-bottom: 2.5rem; }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 2px solid var(--line);
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(15, 37, 55, 0.04);
+    }
+    .panel p + p { margin-top: 0.9rem; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.1rem;
+    }
+    .practice-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--navy);
+      border-radius: 8px;
+      padding: 1.35rem;
+      box-shadow: 0 2px 6px rgba(15, 37, 55, 0.04);
+    }
+    .practice-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 1.08rem;
+      margin-bottom: 0.45rem;
+    }
+    .practice-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .info-list {
+      list-style: none;
+    }
+    .info-list li {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+    .info-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .info-list strong { color: var(--navy); }
+    .contact-panel {
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .contact-panel h2 {
+      color: #ffffff;
+      border-bottom-color: rgba(255, 255, 255, 0.2);
+    }
+    .contact-panel p { color: #e4e7eb; }
+    .contact-rows {
+      margin: 1.25rem auto 1.5rem;
+      max-width: 520px;
+      font-size: 0.96rem;
+      line-height: 2;
+    }
+    .contact-rows a { color: var(--gold-light); text-decoration: none; }
+    footer {
+      background: #e9eef3;
+      color: var(--muted);
+      padding: 1.75rem 1.25rem;
+      font-size: 0.8rem;
+      border-top: 1px solid var(--line);
+    }
+    .footer-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .footer-inner p + p { margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <span>Washington, D.C.</span> &bull; Legal Information &amp; Consultations &bull; By Appointment
+  </div>
+
+  <header>
+    <div class="eyebrow">Legal Practice &bull; Washington, D.C.</div>
+    <h1>Mathew Gregerson, Esq.</h1>
+    <p class="subtitle">
+      Attorney at Law &mdash; Civil Litigation, Appellate Advocacy, Contracts &amp; Business Counsel, and Regulatory Law
+    </p>
+    <a href="#contact" class="btn">Request a Consultation</a>
+    <a href="#practice-areas" class="btn-outline">Practice Areas</a>
+  </header>
+
+  <main class="wrap">
+
+    <section id="about">
+      <h2>Attorney Profile</h2>
+      <div class="panel">
+        <p>
+          Mathew Gregerson is a licensed attorney serving clients in Washington, D.C. The practice focuses on
+          clear legal analysis, disciplined preparation, and practical advocacy tailored to each client's
+          objectives across disputes, transactions, and regulatory matters.
+        </p>
+        <p>
+          Clients work directly with counsel from initial evaluation through resolution, with clear and timely
+          communication at every stage of representation.
+        </p>
+      </div>
+    </section>
+
+    <section id="practice-areas">
+      <h2>Practice Areas</h2>
+      <div class="grid-2">
+        <div class="practice-card">
+          <h3>Civil Litigation &amp; Dispute Resolution</h3>
+          <p>
+            Representation in civil lawsuits, commercial disputes, pre-suit strategy, settlement negotiations,
+            mediation, and arbitration.
+          </p>
+        </div>
+        <div class="practice-card">
+          <h3>Appellate Advocacy</h3>
+          <p>
+            Comprehensive record review, legal research, appellate briefing, post-trial motions, and oral
+            advocacy.
+          </p>
+        </div>
+        <div class="practice-card">
+          <h3>Contracts &amp; Business Counsel</h3>
+          <p>
+            Drafting, reviewing, and negotiating commercial contracts, partnership and service agreements, NDAs,
+            and ongoing business advisory.
+          </p>
+        </div>
+        <div class="practice-card">
+          <h3>Regulatory &amp; Administrative Law</h3>
+          <p>
+            Counsel on compliance, licensing, agency inquiries, and administrative proceedings affecting individuals
+            and organizations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials">
+      <h2>Admissions, Scope &amp; Approach</h2>
+      <div class="panel">
+        <ul class="info-list">
+          <li><strong>Jurisdiction:</strong> Licensed Attorney &mdash; Washington, D.C.</li>
+          <li><strong>Scope of Practice:</strong> Civil litigation, appellate matters, contracts, business counsel, and regulatory law</li>
+          <li><strong>Service Area:</strong> Serving Washington, D.C. clients (physical office street address not published online)</li>
+          <li><strong>Consultations:</strong> Scheduled phone, video, or arranged meetings</li>
+          <li><strong>Availability:</strong> Weekday business hours by appointment</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-panel">
+        <h2>Contact &amp; Inquiries</h2>
+        <p>
+          Reach out directly to discuss a potential legal matter or schedule a confidential consultation.
+        </p>
+        <div class="contact-rows">
+          <div><strong>Jurisdiction:</strong> Washington, D.C.</div>
+          <div><strong>Phone:</strong> <a href="tel:+14694375728">+1 469-437-5728</a></div>
+          <div><strong>Email:</strong> <a href="mailto:Lawyermathew0123@outlook.com">Lawyermathew0123@outlook.com</a></div>
+        </div>
+        <a href="mailto:Lawyermathew0123@outlook.com?subject=Consultation%20Request%20-%20Washington%2C%20D.C." class="btn">
+          Email Office
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 Mathew Gregerson. All Rights Reserved.</p>
+      <p>
+        <strong>Legal Notice &amp; Disclaimer:</strong> This website is provided for general informational
+        purposes only and does not constitute formal legal advice or establish an attorney-client relationship.
+        Do not send confidential or time-sensitive information before an attorney-client relationship is
+        confirmed.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
